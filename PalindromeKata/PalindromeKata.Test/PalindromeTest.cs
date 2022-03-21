@@ -1,24 +1,20 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
+using PalindromeKata.Prod;
 
 namespace PalindromeKata.Test
 {
     [TestClass]
-    public class UnitTest1
+    public class PalindromeTest
     {
         [TestMethod]
         public void ShouldReturnTrueForALetter()
         {
             string chaine = "a";
 
-            bool result = EstUnPalindrome(chaine);
+            bool result = Palindrome.EstUnPalindrome(chaine);
 
             Assert.IsTrue(result);
         }
-
-        private bool EstUnPalindrome(string chaine)
-        {
-            return true;
-        }
+        
     }
 }
