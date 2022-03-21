@@ -4,7 +4,14 @@
     {
         public static bool EstUnPalindrome(string chaine)
         {
-            return true;
+            if (chaine.Length == 1)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }
