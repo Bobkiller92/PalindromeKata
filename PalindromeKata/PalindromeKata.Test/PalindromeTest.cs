@@ -85,5 +85,25 @@ namespace PalindromeKata.Test
 
             Assert.IsFalse(result);
         }
+
+        [TestMethod]
+        public void ShouldReturnTrueForBiggerPalindrom()
+        {
+            string chaine = "ressasser";
+
+            bool result = Palindrome.EstUnPalindrome(chaine);
+
+            Assert.IsTrue(result);
+        }
+
+        [TestMethod]
+        public void ShouldReturnFalseForRandomWord()
+        {
+            string chaine = "ressaisir";
+
+            bool result = Palindrome.EstUnPalindrome(chaine);
+
+            Assert.IsFalse(result);
+        }
     }
 }
