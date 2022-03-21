@@ -46,5 +46,14 @@ namespace PalindromeKata.Test
             Assert.IsTrue(result);
         }
 
+        [TestMethod]
+        public void ShouldReturnTrueForThreeLettersPalindrom()
+        {
+            string chaine = "mom";
+
+            bool result = Palindrome.EstUnPalindrome(chaine);
+
+            Assert.IsTrue(result);
+        }
     }
 }
