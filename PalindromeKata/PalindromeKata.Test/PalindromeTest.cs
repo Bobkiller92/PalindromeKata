@@ -36,5 +36,15 @@ namespace PalindromeKata.Test
             Assert.IsFalse(result);
         }
 
+        [TestMethod]
+        public void ShouldReturnTrueForTwoMatchingLetters()
+        {
+            string chaine = "rr";
+
+            bool result = Palindrome.EstUnPalindrome(chaine);
+
+            Assert.IsTrue(result);
+        }
+
     }
 }
