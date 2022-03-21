@@ -55,5 +55,15 @@ namespace PalindromeKata.Test
 
             Assert.IsTrue(result);
         }
+
+        [TestMethod]
+        public void ShouldReturnFalseForNoPalindromThreeLetters()
+        {
+            string chaine = "mra";
+
+            bool result = Palindrome.EstUnPalindrome(chaine);
+
+            Assert.IsFalse(result);
+        }
     }
 }
