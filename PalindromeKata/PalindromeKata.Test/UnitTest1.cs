@@ -1,4 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 
 namespace PalindromeKata.Test
 {
@@ -6,8 +7,18 @@ namespace PalindromeKata.Test
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void ShouldReturnTrueForALetter()
         {
+            string chaine = "a";
+
+            bool result = EstUnPalindrome(chaine);
+
+            Assert.IsTrue(result);
+        }
+
+        private bool EstUnPalindrome(string chaine)
+        {
+            return true;
         }
     }
 }
