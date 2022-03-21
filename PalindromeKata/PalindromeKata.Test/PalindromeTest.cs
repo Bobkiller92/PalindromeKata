@@ -65,5 +65,25 @@ namespace PalindromeKata.Test
 
             Assert.IsFalse(result);
         }
+
+        [TestMethod]
+        public void ShouldReturnTrueForFourLettersPalindrom()
+        {
+            string chaine = "abba";
+
+            bool result = Palindrome.EstUnPalindrome(chaine);
+
+            Assert.IsTrue(result);
+        }
+
+        [TestMethod]
+        public void ShouldReturnFalseForNoPalindromFourLetters()
+        {
+            string chaine = "abra";
+
+            bool result = Palindrome.EstUnPalindrome(chaine);
+
+            Assert.IsFalse(result);
+        }
     }
 }
